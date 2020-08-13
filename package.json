@@ -8,6 +8,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "standard | snazzy && node tasks/build.js",
+    "docs:generate": "npx jsdoc -t node_modules/tsd-jsdoc/dist -r lib -d .",
     "lint": "standard",
     "test-coverage": "karma start --browsers ChromeHeadless --single-run",
     "test": "karma start --coverage",
@@ -50,7 +51,8 @@
     "rollup-plugin-cpy": "^2.0.1",
     "sinon": "^8.0.1",
     "snazzy": "^8.0.0",
-    "standard": "^14.3.1"
+    "standard": "^14.3.1",
+    "tsd-jsdoc": "^2.5.0"
   },
   "standard": {
     "env": {
